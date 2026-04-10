@@ -20,7 +20,7 @@ def add_profession(name, description, tags):
                      (name, description, tags))
 
 def find_professions_by_tags(user_tags):
-    """Возвращает до 3 профессий, отсортированных по количеству совпадающих тегов."""
+    
     conn = sqlite3.connect(DB_NAME)
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
